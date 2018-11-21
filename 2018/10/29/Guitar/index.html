@@ -11,11 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="tilaxl,"> 
-    <meta name="description" content="
+    <meta name="description" content="写这篇文章记录一下学琴的心得体会以及整理学习方法
+感想、近期难点
 
-function doDecrypt (pwd, onError) {
-	console.log(&#39;in doDecrypt&#39;);
-	const txt = document.getElemen,"> 
+
+学习方法
+
+
+干货"> 
     <meta name="author" content="tilaxl"> 
     <link rel="alternative" href="atom.xml" title="Tilaxl" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -55,46 +58,16 @@ function doDecrypt (pwd, onError) {
 
         </div>
         <div class="content markdown">
-            <script src="/js/crypto-js.js"></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">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</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>这是一篇记录自学进程顺便督促自身的日记，从2018.10.22 —— 未来，从入门 —— 入土。=。=<br><br><br></p>
+<p><center>第一周(10.22 —— 10.28)、7天</center><br>从最初姿势的纠正到枯燥的基本功练习，再到最后一天练曲子上头，不得不说，这一周收获很多。学吉他其实是因为很喜欢听歌，特别是一些日系指弹，然后就特别想自己演奏出来。特别喜欢Alexandr Misko、uBio、岸部真明的作品。</p>
+<p>总结一下这一周：有了一个很好的爬格子方法，但在姿势矫正上还需要多花心思。学会了按一些简单的和弦，但转换速度以及准确度还需要特殊的练习，能弹出泛音，但还不能实际应用。再然后是学了《流行的云》前半段了，谈曲子比练基本功有趣的多。</p>
+<p>总之算是有个好的开始，再接再厉！<br><br><br></p>
+<p><center>第二周(10.29 —— 11.4)、2天</center><br>这周出差了，就练了两天，这两天的话把《流行的云》前几段按照原速度弹出来，后面还有点不流畅。在谈曲子的过程中也发现了各种各样的问题。。一是觉得右手还是别扭，勾弦有杂音，与大拇指配合的也不好，伴奏声音太小。二是左手按和弦还好，谈曲子时真的难转换，没办法按出自己满意的手型。正好这次出差中断了一下，先把这曲子停一停，继续练些其他的，为了优化这两只手的短板。</p>
+<p>说回来，出差完回来右手手腕习惯向上总觉得做不出标准的姿势。左手也不灵活了。<br><br><br></p>
+<p><center>第三周(11.5 —— 11.11)、7天</center><br>开始学习天空之城和always with me的前奏，加上了琶音，还是有点难的。对于谈曲子和弦转换过慢和轻重不分的各种短板也是觉得有点懊恼。感觉练曲子的提升并不大，也就是说还需要有更针对性的基本功练习，强化某一方面的短板。很多技巧，要学习可能要花上很久很久的时间，倒是有点急于求成了，要会弹一首曲子并不难，可精挑细琢却不是件简单又快速的事情。</p>
+<p>该是在保持训练时间的前提下提高效率了<br><br><br></p>
+<p><center>第四周(11.12 —— 11.18)、6天</center><br>感觉我啃了5天的always with me，硬是没弹好。不过好像是因为这首曲子，学了一点点琶音。以后改进学曲子的方法，少弹着旋律玩，多把不熟悉的地方拿出来一遍一遍的练。周六出去玩了所以没学。周末学了犬夜叉曲子，还是很好听的。不过慢曲子的饱满度，细节处理，音高，连贯性就很值得雕琢了。想学cl的曲子了，也不知道什么时候能学会。最近有点水了，感觉在玩，虽然也没什么不好的呃。继续前进！</p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="https://music.163.com/#/song?id=441532">

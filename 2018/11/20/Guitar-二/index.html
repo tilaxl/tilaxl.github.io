@@ -11,11 +11,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="tilaxl,"> 
-    <meta name="description" content="
+    <meta name="description" content="写这篇文章记录一下学琴的心得体会以及整理学习方法
+感想、近期难点
 
-function doDecrypt (pwd, onError) {
-	console.log(&#39;in doDecrypt&#39;);
-	const txt = document.getElemen,"> 
+
+学习方法
+
+
+干货"> 
     <meta name="author" content="tilaxl"> 
     <link rel="alternative" href="atom.xml" title="Tilaxl" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -55,46 +58,14 @@ function doDecrypt (pwd, onError) {
 
         </div>
         <div class="content markdown">
-            <script src="/js/crypto-js.js"></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+l3gX0Opb1Y2hlxYoC3sr2leIVPz0AarElizgKlMOECyLKzjbRYttgM79fZIKUpi82RcA5jv+X9Q3UOHPiIC5EVcyyPbNCBIm6dFMm85KqeIpZ2WdjzBqh7WjRZ/Jz4w6aQnhCh6vhF+PJiqhG/PjJIOXKx5iWiz4ZkqvL4pGifiLUpAyPscIs53g98gbBbxFruxaisdzv5NIjmsfm5642Tfvx4OIr9+DVjk+6CltsHIL5fm4YQ+gj8jgRfFXMZoM1onXGQ1hf2Q==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <p>写这篇文章记录一下学琴的心得体会以及整理学习方法<br><br><br></p>
+<center>感想、近期难点</center>
+
+
+<center>学习方法</center>
+
+
+<center>干货</center>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
