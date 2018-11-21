@@ -11,14 +11,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="tilaxl,"> 
-    <meta name="description" content="写这篇文章记录一下学琴的心得体会以及整理学习方法
-感想、近期难点
+    <meta name="description" content="
 
-
-学习方法
-
-
-干货"> 
+function doDecrypt (pwd, onError) {
+	console.log(&#39;in doDecrypt&#39;);
+	const txt = document.getElemen,"> 
     <meta name="author" content="tilaxl"> 
     <link rel="alternative" href="atom.xml" title="Tilaxl" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -58,16 +55,46 @@
 
         </div>
         <div class="content markdown">
-            <p>这是一篇记录自学进程顺便督促自身的日记，从2018.10.22 —— 未来，从入门 —— 入土。=。=<br><br><br></p>
-<p><center>第一周(10.22 —— 10.28)、7天</center><br>从最初姿势的纠正到枯燥的基本功练习，再到最后一天练曲子上头，不得不说，这一周收获很多。学吉他其实是因为很喜欢听歌，特别是一些日系指弹，然后就特别想自己演奏出来。特别喜欢Alexandr Misko、uBio、岸部真明的作品。</p>
-<p>总结一下这一周：有了一个很好的爬格子方法，但在姿势矫正上还需要多花心思。学会了按一些简单的和弦，但转换速度以及准确度还需要特殊的练习，能弹出泛音，但还不能实际应用。再然后是学了《流行的云》前半段了，谈曲子比练基本功有趣的多。</p>
-<p>总之算是有个好的开始，再接再厉！<br><br><br></p>
-<p><center>第二周(10.29 —— 11.4)、2天</center><br>这周出差了，就练了两天，这两天的话把《流行的云》前几段按照原速度弹出来，后面还有点不流畅。在谈曲子的过程中也发现了各种各样的问题。。一是觉得右手还是别扭，勾弦有杂音，与大拇指配合的也不好，伴奏声音太小。二是左手按和弦还好，谈曲子时真的难转换，没办法按出自己满意的手型。正好这次出差中断了一下，先把这曲子停一停，继续练些其他的，为了优化这两只手的短板。</p>
-<p>说回来，出差完回来右手手腕习惯向上总觉得做不出标准的姿势。左手也不灵活了。<br><br><br></p>
-<p><center>第三周(11.5 —— 11.11)、7天</center><br>开始学习天空之城和always with me的前奏，加上了琶音，还是有点难的。对于谈曲子和弦转换过慢和轻重不分的各种短板也是觉得有点懊恼。感觉练曲子的提升并不大，也就是说还需要有更针对性的基本功练习，强化某一方面的短板。很多技巧，要学习可能要花上很久很久的时间，倒是有点急于求成了，要会弹一首曲子并不难，可精挑细琢却不是件简单又快速的事情。</p>
-<p>该是在保持训练时间的前提下提高效率了<br><br><br></p>
-<p><center>第四周(11.12 —— 11.18)、6天</center><br>感觉我啃了5天的always with me，硬是没弹好。不过好像是因为这首曲子，学了一点点琶音。以后改进学曲子的方法，少弹着旋律玩，多把不熟悉的地方拿出来一遍一遍的练。周六出去玩了所以没学。周末学了犬夜叉曲子，还是很好听的。不过慢曲子的饱满度，细节处理，音高，连贯性就很值得雕琢了。想学cl的曲子了，也不知道什么时候能学会。最近有点水了，感觉在玩，虽然也没什么不好的呃。继续前进！</p>
-
+            <script src="/js/crypto-js.js"></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">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</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="https://music.163.com/#/song?id=441532">
